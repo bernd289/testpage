@@ -1,0 +1,44 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title><!--#echo var="SERVER_NAME" --></title>
+	<link type="text/css" rel="stylesheet" href="./style.css">
+</head>
+<body>
+request from
+<span class="mark_blue">
+	<a href="http://www.db.ripe.net/whois?searchtext=<!--#echo var='REMOTE_ADDR' -->"><!--#echo var="REMOTE_ADDR" --></a>:<!--#echo var="REMOTE_PORT" -->
+</span>
+	<span class="mark_green">
+	<b> (<!--#echo var="REMOTE_HOST" -->) </b>
+	</span>
+<br>
+to 
+<span class="mark_blue">
+	<a href="http://www.db.ripe.net/whois?searchtext=<!--#echo var='SERVER_ADDR' -->"><!--#echo var="SERVER_ADDR" --></a>:<!--#echo var="SERVER_PORT" -->
+</span>
+	<span class="mark_green">
+	<b> (<!--#echo var="SERVER_NAME" -->) </b>
+	</span>
+<br>
+at
+<span class="mark_blue"><!--#echo var="DATE_GMT" --></span>
+<br>
+using 
+<span class="mark_blue"><!--#echo var="HTTP_USER_AGENT" --></span>
+<br>
+with 
+<span class="mark_blue"><!--#echo var="SERVER_PROTOCOL" --></span>
+using request-method
+<span class="mark_blue"><!--#echo var="REQUEST_METHOD" --></span>
+on 
+<span class="mark_blue"><!--#echo var="HTTP_CONNECTION" --></span>
+connection 
+<br>
+preferring
+<span class="mark_blue"><!--#echo var="HTTP_ACCEPT_LANGUAGE" --></span>
+encoded as
+<span class="mark_blue"><!--#echo var="QUERY_STRING_UNESCAPED" --></span>
+<br>
+while generally accepting
+<span class="mark_blue"><!--#echo var="HTTP_ACCEPT" --></span>
+</body></html>
