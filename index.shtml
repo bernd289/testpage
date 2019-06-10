@@ -14,7 +14,9 @@
 <!--#else -->
 	<span class="mark_red">IPv4</span>
 <!--#endif -->
-request from
+request
+<br>
+from
 <span class="mark_blue">
 	<a href="https://www.db.ripe.net/whois?searchtext=<!--#echo var='REMOTE_ADDR' -->"><!--#echo var="REMOTE_ADDR" --></a>:<!--#echo var="REMOTE_PORT" -->
 </span>
