@@ -6,7 +6,7 @@
 <body>
 request from
 <span class="mark_blue">
-	<a href="http://www.db.ripe.net/whois?searchtext=<!--#echo var='REMOTE_ADDR' -->"><!--#echo var="REMOTE_ADDR" --></a>:<!--#echo var="REMOTE_PORT" -->
+	<a href="https://www.db.ripe.net/whois?searchtext=<!--#echo var='REMOTE_ADDR' -->"><!--#echo var="REMOTE_ADDR" --></a>:<!--#echo var="REMOTE_PORT" -->
 </span>
 	<span class="mark_green">
 	<b> (<!--#echo var="REMOTE_HOST" -->) </b>
@@ -14,7 +14,7 @@ request from
 <br>
 to 
 <span class="mark_blue">
-	<a href="http://www.db.ripe.net/whois?searchtext=<!--#echo var='SERVER_ADDR' -->"><!--#echo var="SERVER_ADDR" --></a>:<!--#echo var="SERVER_PORT" -->
+	<a href="https://www.db.ripe.net/whois?searchtext=<!--#echo var='SERVER_ADDR' -->"><!--#echo var="SERVER_ADDR" --></a>:<!--#echo var="SERVER_PORT" -->
 </span>
 	<span class="mark_green">
 	<b> (<!--#echo var="SERVER_NAME" -->) </b>
