@@ -18,9 +18,11 @@ request from
 <span class="mark_blue">
 	<a href="http://www.db.ripe.net/whois?searchtext=<!--#echo var='REMOTE_ADDR' -->"><!--#echo var="REMOTE_ADDR" --></a>:<!--#echo var="REMOTE_PORT" -->
 </span>
-	<span class="mark_green">
-	<b> (<!--#echo var="REMOTE_HOST" -->) </b>
-	</span>
+<!--#if expr='v("REMOTE_HOST") = ""' -->
+        <span class="mark_red">(without DNS name)</span>
+<!--#else -->
+        <span class="mark_green">(<!--#echo var='REMOTE_HOST' -->)</span>
+<!--#endif -->
 <br>
 to 
 <span class="mark_blue">
