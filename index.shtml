@@ -4,6 +4,11 @@
 	<link type="text/css" rel="stylesheet" href="./style.css">
 </head>
 <body>
+<!--#if expr='v("HTTPS") = "On"' -->
+	<span class="mark_red">unencrypted</span>
+<!--#else -->
+	<span class="mark_green"><!--#echo var='SSL_PROTOCOL' --> (<!--#echo var='SSL_CIPHER' --> <!--#echo var='SSL_CIPHER_USEKEYSIZE' -->bit SNI=<!--#echo var='SSL_TLS_SNI' -->) encrypted</span>
+<!--#endif -->
 request from
 <span class="mark_blue">
 	<a href="http://www.db.ripe.net/whois?searchtext=<!--#echo var='REMOTE_ADDR' -->"><!--#echo var="REMOTE_ADDR" --></a>:<!--#echo var="REMOTE_PORT" -->
