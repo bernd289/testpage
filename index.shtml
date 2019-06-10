@@ -33,7 +33,7 @@ to
 	</span>
 <br>
 at
-<span class="mark_blue"><!--#echo var="DATE_GMT" --></span>
+<span class="mark_blue">Local Time: <!--#echo var="DATE_LOCAL" -->, GMT: <!--#echo var="DATE_GMT" --></span>
 <br>
 using 
 <span class="mark_blue"><!--#echo var="HTTP_USER_AGENT" --></span>
