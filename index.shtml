@@ -1,5 +1,7 @@
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title><!--#echo var="SERVER_NAME" --></title>
 	<link type="text/css" rel="stylesheet" href="./style.css">
 </head>
@@ -50,9 +52,8 @@ connection
 <br>
 preferring
 <span class="mark_blue"><!--#echo var="HTTP_ACCEPT_LANGUAGE" --></span>
-encoded as
-<span class="mark_blue"><!--#echo var="QUERY_STRING_UNESCAPED" --></span>
 <br>
 while generally accepting
 <span class="mark_blue"><!--#echo var="HTTP_ACCEPT" --></span>
-</body></html>
+</body>
+</html>
