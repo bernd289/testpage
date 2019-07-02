@@ -2,6 +2,7 @@ DirectoryIndex index.shtml
 
 AddType text/html .shtml
 AddHandler server-parsed .shtml
+AddHandler server-parsed .txt
 Options +Includes
 
 FileETag None
