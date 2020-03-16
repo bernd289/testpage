@@ -54,5 +54,7 @@ preferring
 <br>
 while generally accepting
 <span class="mark_blue"><!--#echo var="HTTP_ACCEPT" --></span>
+<br><br><br>
+<p><a href="https://github.com/bernd289/testpage">View Source Code on GitHub</a></p>
 </body>
 </html>
