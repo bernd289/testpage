@@ -6,14 +6,14 @@
 </head>
 <body>
 	<!--#if expr='v("HTTPS") = "on"' -->
-		<span class="mark_green"><!--#echo var="SSL_PROTOCOL" --> (<!--#echo var="SSL_CIPHER" --> <!--#echo var="SSL_CIPHER_USEKEYSIZE" -->bit SNI=<!--#echo var="SSL_TLS_SNI" -->) encrypted</span>
+		<span class="mark_green flag1<!--#echo var="HTTPS" -->"><!--#echo var="SSL_PROTOCOL" --> (<!--#echo var="SSL_CIPHER" --> <!--#echo var="SSL_CIPHER_USEKEYSIZE" -->bit SNI=<!--#echo var="SSL_TLS_SNI" -->) encrypted</span>
 	<!--#else -->
-		<span class="mark_red">unencrypted</span>
+		<span class="mark_red flag2<!--#echo var="HTTPS" -->">unencrypted</span>
 	<!--#endif -->
 	<!--#if expr='v("REMOTE_ADDR") =~ /(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))/' -->
-		<span class="mark_green">IPv6</span>
+		<span class="mark_green flag3<!--#echo var="HTTP_IPVERSION" -->">IPv6</span>
 	<!--#else -->
-		<span class="mark_red">IPv4</span>
+		<span class="mark_red flag4<!--#echo var="HTTP_IPVERSION" -->">IPv4</span>
 	<!--#endif -->
 	request
 	<br>
@@ -22,9 +22,9 @@
 		<a href="https://www.db.ripe.net/whois?searchtext=<!--#echo var="REMOTE_ADDR" -->"><!--#echo var="REMOTE_ADDR" --></a>:<!--#echo var="REMOTE_PORT" -->
 	</span>
 	<!--#if expr='v("REMOTE_HOST") = ""' -->
-		<span class="mark_red">(without DNS name)</span>
+		<span class="mark_red flag5<!--#echo var="REMOTE_HOST" -->">(without DNS name)</span>
 	<!--#else -->
-		<span class="mark_green">(<!--#echo var="REMOTE_HOST" -->)</span>
+		<span class="mark_green flag6<!--#echo var="REMOTE_HOST" -->">(<!--#echo var="REMOTE_HOST" -->)</span>
 	<!--#endif -->
 	<br>
 	to 
