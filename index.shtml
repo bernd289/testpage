@@ -6,7 +6,7 @@
 </head>
 <body>
 	<!--#if expr='v("HTTPS") = "on"' -->
-		<span class="mark_green"><!--#echo var='SSL_PROTOCOL' --> (<!--#echo var='SSL_CIPHER' --> <!--#echo var='SSL_CIPHER_USEKEYSIZE' -->bit SNI=<!--#echo var='SSL_TLS_SNI' -->) encrypted</span>
+		<span class="mark_green"><!--#echo var="SSL_PROTOCOL" --> (<!--#echo var="SSL_CIPHER" --> <!--#echo var="SSL_CIPHER_USEKEYSIZE" -->bit SNI=<!--#echo var="SSL_TLS_SNI" -->) encrypted</span>
 	<!--#else -->
 		<span class="mark_red">unencrypted</span>
 	<!--#endif -->
@@ -19,12 +19,12 @@
 	<br>
 	from
 	<span class="mark_blue">
-		<a href="https://www.db.ripe.net/whois?searchtext=<!--#echo var='REMOTE_ADDR' -->"><!--#echo var="REMOTE_ADDR" --></a>:<!--#echo var="REMOTE_PORT" -->
+		<a href="https://www.db.ripe.net/whois?searchtext=<!--#echo var="REMOTE_ADDR" -->"><!--#echo var="REMOTE_ADDR" --></a>:<!--#echo var="REMOTE_PORT" -->
 	</span>
 	<!--#if expr='v("REMOTE_HOST") = ""' -->
-	        <span class="mark_red">(without DNS name)</span>
+		<span class="mark_red">(without DNS name)</span>
 	<!--#else -->
-	        <span class="mark_green">(<!--#echo var='REMOTE_HOST' -->)</span>
+		<span class="mark_green">(<!--#echo var="REMOTE_HOST" -->)</span>
 	<!--#endif -->
 	<br>
 	to 
