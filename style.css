@@ -3,6 +3,9 @@ html, body {
 	font-size: 1em;
 	background-color: white;
 }
+.flag1, .flag2on, .flag3ipv4, .flag4ipv6, .flag5, .flag6 {
+	display: none;
+}
 .mark_red {
 	color: #A00000;
 }
