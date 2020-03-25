@@ -3,6 +3,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title><!--#echo var="SERVER_NAME" --></title>
 	<link type="text/css" rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 </head>
 <body>
 	<!--#if expr='v("HTTPS") = "on"' -->
@@ -54,7 +55,7 @@
 	<br>
 	while generally accepting
 	<span class="mark_blue"><!--#echo var="HTTP_ACCEPT" --></span>
-	<br><br><br>
-	<p><a href="https://github.com/bernd289/testpage">View Source Code on GitHub</a></p>
+
+	<a class="github-fork-ribbon" href="https://github.com/bernd289/testpage" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 </body>
 </html>
