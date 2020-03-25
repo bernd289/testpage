@@ -1,7 +1,8 @@
 html, body {
-	font-family: Courier;
+	font-family: "Lucida Console", Courier, monospace;
 	font-size: 1em;
 	background-color: white;
+	color: black;
 }
 .flag1, .flag2on, .flag3ipv4, .flag4ipv6, .flag5, .flag6 {
 	display: none;
@@ -14,4 +15,20 @@ html, body {
 }
 .mark_blue {
 	color: #0000A0;
+}
+
+@media (prefers-color-scheme: dark) {
+	html, body {
+		background-color: black;
+		color: white;
+	}
+	.mark_red {
+		color: lightsalmon;
+	}
+	.mark_green {
+		color: lightseagreen;
+	}
+	.mark_blue {
+		color: lightskyblue;
+	}
 }
