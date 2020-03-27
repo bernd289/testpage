@@ -5,8 +5,6 @@
 	<link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-	<span id="forkongithub"><a href="https://github.com/bernd289/testpage">Fork me on GitHub</a></span>
-	<br>
 	<!--#if expr='v("HTTPS") = "on"' -->
 		<span class="mark_green flag1<!--#echo var="HTTPS" -->"><!--#echo var="SSL_PROTOCOL" --> (<!--#echo var="SSL_CIPHER" --> <!--#echo var="SSL_CIPHER_USEKEYSIZE" -->bit SNI=<!--#echo var="SSL_TLS_SNI" -->) encrypted</span>
 	<!--#else -->
@@ -56,5 +54,7 @@
 	<br>
 	while generally accepting
 	<span class="mark_blue"><!--#echo var="HTTP_ACCEPT" --></span>
+	<br><br><br>
+	<span id="forkongithub"><a href="https://github.com/bernd289/testpage">Fork me on GitHub</a></span>
 </body>
 </html>
