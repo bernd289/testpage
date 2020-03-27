@@ -3,9 +3,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title><!--#echo var="SERVER_NAME" --></title>
 	<link type="text/css" rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 </head>
 <body>
+	<span id="forkongithub"><a href="https://github.com/bernd289/testpage">Fork me on GitHub</a></span>
+
 	<!--#if expr='v("HTTPS") = "on"' -->
 		<span class="mark_green flag1<!--#echo var="HTTPS" -->"><!--#echo var="SSL_PROTOCOL" --> (<!--#echo var="SSL_CIPHER" --> <!--#echo var="SSL_CIPHER_USEKEYSIZE" -->bit SNI=<!--#echo var="SSL_TLS_SNI" -->) encrypted</span>
 	<!--#else -->
@@ -55,7 +56,5 @@
 	<br>
 	while generally accepting
 	<span class="mark_blue"><!--#echo var="HTTP_ACCEPT" --></span>
-
-	<a class="github-fork-ribbon" href="https://github.com/bernd289/testpage" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 </body>
 </html>
