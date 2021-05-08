@@ -73,8 +73,6 @@ server {
 
 ## You can test it here:
 
-https://test.s-eco.de
-
 https://test.matthiashille.com 
 (IPv4 only: https://test4.matthiashille.com IPv6 only: https://test6.matthiashille.com)
 
